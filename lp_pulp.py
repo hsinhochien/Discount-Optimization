@@ -1,5 +1,4 @@
 # pip install pulp==2.9.0
-
 from pulp import LpMaximize, LpProblem, LpVariable, lpSum, LpBinary, value, PULP_CBC_CMD
 from get_input import get_input
 import math
@@ -162,19 +161,19 @@ def get_optimal_discount(input_dict):
 input_dict_1 = {
     "comboDiscounts": [
         {
-            "campaignId": "BC_240801145409145",
+            "campaignId": "1",
             "discounts": {
                 "A": [499, 50]},
             "items": [
-                {"pid": 2056401, "price": 680, "qty": 1},
-                {"pid": 1013018, "price": 790, "qty": 10}
+                {"pid": 100, "price": 680, "qty": 1},
+                {"pid": 101, "price": 790, "qty": 10}
             ]
         },
         {
-            "campaignId": "CD_240731110049539",
+            "campaignId": "2",
             "discounts": {"A": [500,0.8]},
             "items": [
-                {"pid": 2056401, "price": 680, "qty": 1}
+                {"pid": 100, "price": 680, "qty": 1}
             ]
         }
     ]
@@ -183,7 +182,7 @@ input_dict_1 = {
 input_dict_2 = {
     "comboDiscounts": [
         {
-            "campaignId": "campaign11_best",
+            "campaignId": "campaign11",
             "discounts": {"A": [1000,0.85]},
             "items": [
                 {"pid": 101, "price": 1000, "qty": 2},
@@ -219,7 +218,7 @@ input_dict_2 = {
             ]
         },
         {
-            "campaignId": "campaign22_best",
+            "campaignId": "campaign22",
             "discounts": {"A": [1000,0.85]},
             "items": [
                 {"pid": 104, "price": 1000, "qty": 2},
@@ -255,7 +254,7 @@ input_dict_2 = {
             ]
         },
         {
-            "campaignId": "campaign33_best",
+            "campaignId": "campaign33",
             "discounts": {"A": [1000,0.85]},
             "items": [
                 {"pid": 107, "price": 1000, "qty": 2},
